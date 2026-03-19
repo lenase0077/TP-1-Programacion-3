@@ -34,7 +34,7 @@
             labelIngresarNombre = new Label();
             buttonPasarUnItem = new Button();
             buttonPasarMultipleItem = new Button();
-            textBoxSalida = new TextBox();
+            listBoxSalida1 = new ListBox();
             SuspendLayout();
             // 
             // textBoxIngresoNombre
@@ -82,6 +82,7 @@
             buttonPasarUnItem.TabIndex = 4;
             buttonPasarUnItem.Text = ">";
             buttonPasarUnItem.UseVisualStyleBackColor = true;
+            buttonPasarUnItem.Click += buttonPasarUnItem_Click;
             // 
             // buttonPasarMultipleItem
             // 
@@ -92,13 +93,13 @@
             buttonPasarMultipleItem.Text = ">>";
             buttonPasarMultipleItem.UseVisualStyleBackColor = true;
             // 
-            // textBoxSalida
+            // listBoxSalida1
             // 
-            textBoxSalida.Location = new Point(407, 102);
-            textBoxSalida.Multiline = true;
-            textBoxSalida.Name = "textBoxSalida";
-            textBoxSalida.Size = new Size(211, 304);
-            textBoxSalida.TabIndex = 6;
+            listBoxSalida1.FormattingEnabled = true;
+            listBoxSalida1.Location = new Point(407, 100);
+            listBoxSalida1.Name = "listBoxSalida1";
+            listBoxSalida1.Size = new Size(207, 304);
+            listBoxSalida1.TabIndex = 7;
             // 
             // Ejercicio_1
             // 
@@ -107,7 +108,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBoxSalida);
+            Controls.Add(listBoxSalida1);
             Controls.Add(buttonPasarMultipleItem);
             Controls.Add(buttonPasarUnItem);
             Controls.Add(labelIngresarNombre);
@@ -129,6 +130,6 @@
         private Label labelIngresarNombre;
         private Button buttonPasarUnItem;
         private Button buttonPasarMultipleItem;
-        private TextBox textBoxSalida;
+        private ListBox listBoxSalida1;
     }
 }
