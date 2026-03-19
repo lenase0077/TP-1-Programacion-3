@@ -43,6 +43,7 @@
             textBoxIngresoNombre.Name = "textBoxIngresoNombre";
             textBoxIngresoNombre.Size = new Size(284, 23);
             textBoxIngresoNombre.TabIndex = 0;
+            textBoxIngresoNombre.KeyPress += textBoxIngresoNombre_KeyPress;
             // 
             // buttonAgregarNombre
             // 

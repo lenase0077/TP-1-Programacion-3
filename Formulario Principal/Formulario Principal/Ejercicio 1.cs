@@ -75,5 +75,13 @@ namespace Formulario_Principal
                 MessageBox.Show("Seleccione un nombre de la lista");
             }
         }
+
+        private void textBoxIngresoNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                buttonAgregarNombre.PerformClick();
+            }
+        }
     }
 }

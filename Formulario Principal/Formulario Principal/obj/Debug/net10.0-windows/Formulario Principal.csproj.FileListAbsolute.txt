@@ -17,3 +17,23 @@ C:\uwu\Universidad\Programacion 3\TP 1\TP-1-Programacion-3-main\Formulario Princ
 C:\uwu\Universidad\Programacion 3\TP 1\TP-1-Programacion-3-main\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.pdb
 C:\uwu\Universidad\Programacion 3\TP 1\TP-1-Programacion-3-main\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.genruntimeconfig.cache
 C:\uwu\Universidad\Programacion 3\TP 1\TP-1-Programacion-3-main\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\ref\Formulario Principal.dll
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\bin\Debug\net10.0-windows\Formulario Principal.exe
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\bin\Debug\net10.0-windows\Formulario Principal.deps.json
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\bin\Debug\net10.0-windows\Formulario Principal.runtimeconfig.json
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\bin\Debug\net10.0-windows\Formulario Principal.dll
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\bin\Debug\net10.0-windows\Formulario Principal.pdb
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario_Principal.Ejercicio_1.resources
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario_Principal.Ejercicio_2.resources
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario_Principal.Ejercicio_3.resources
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario_Principal.FormularioPrincipal.resources
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.csproj.GenerateResource.cache
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.GeneratedMSBuildEditorConfig.editorconfig
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.AssemblyInfoInputs.cache
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.AssemblyInfo.cs
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.csproj.CoreCompileInputs.cache
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.sourcelink.json
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.dll
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\refint\Formulario Principal.dll
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.pdb
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\Formulario Principal.genruntimeconfig.cache
+D:\ALEJO\AleMart\Documents\GITHUB\ProgramacionIII-UTN\TP-1-Programacion-3\Formulario Principal\Formulario Principal\obj\Debug\net10.0-windows\ref\Formulario Principal.dll
