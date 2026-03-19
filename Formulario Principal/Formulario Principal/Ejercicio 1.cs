@@ -34,21 +34,20 @@ namespace Formulario_Principal
 
         private void buttonAgregarNombre_Click(object sender, EventArgs e)
         {
-
-            if (!string.IsNullOrEmpty(textBoxIngresoNombre.Text))
+            //if (textBoxIngresoNombre.Text.Trim().Length > 0) <- - Otra forma de validar que el texto no esté vacío
+            //Con el método Trim() se eliminan los espacios en blanco al inicio y al final del texto, por lo que si el usuario ingresa solo espacios, el resultado será una cadena vacía (""). Por lo tanto, al verificar si el resultado de Trim() es diferente de una cadena vacía, se asegura que el usuario haya ingresado un nombre válido.
+            if (textBoxIngresoNombre.Text.Trim() != "")
             {
-                // funcion if para validar que no haya caracteres vacios
-                if (string.IsNullOrWhiteSpace(textBoxIngresoNombre.Text))
-                {
-                    MessageBox.Show("No se puede ingresar caracteres vacios");
-                    textBoxIngresoNombre.Clear();
-                    return;
-                }
-
-
-                listBoxNombres1.Items.Add(textBoxIngresoNombre.Text);
-                textBoxIngresoNombre.Clear();
+                listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
             }
+
+            else
+            {
+                MessageBox.Show("Ingrese un nombre para agregar a la lista");
+            }
+
+            //Hacemos esto para que el cuadro de texto quede vacío después de agregar el nombre a la lista, para que el usuario pueda ingresar un nuevo nombre sin tener que borrar el anterior manualmente.
+            textBoxIngresoNombre.Text = "";
         }
     }
 }

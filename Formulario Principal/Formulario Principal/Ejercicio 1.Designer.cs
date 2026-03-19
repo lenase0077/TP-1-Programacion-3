@@ -52,7 +52,6 @@
             buttonAgregarNombre.TabIndex = 1;
             buttonAgregarNombre.Text = "Agregar";
             buttonAgregarNombre.UseVisualStyleBackColor = true;
-            buttonAgregarNombre.UseWaitCursor = true;
             buttonAgregarNombre.Click += buttonAgregarNombre_Click;
             // 
             // listBoxNombres1
