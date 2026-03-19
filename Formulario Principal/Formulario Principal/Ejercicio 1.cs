@@ -79,7 +79,8 @@ namespace Formulario_Principal
         private void textBoxIngresoNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
-            {
+            {   
+                e.Handled = true;
                 buttonAgregarNombre.PerformClick();
             }
         }
