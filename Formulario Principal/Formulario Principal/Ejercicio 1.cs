@@ -34,8 +34,6 @@ namespace Formulario_Principal
 
         private void buttonAgregarNombre_Click(object sender, EventArgs e)
         {
-            //listBoxNombres1
-            //textBoxIngresoNombre
 
             if (!string.IsNullOrEmpty(textBoxIngresoNombre.Text))
             {
