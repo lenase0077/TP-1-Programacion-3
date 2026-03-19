@@ -61,5 +61,28 @@ namespace Formulario_Principal
 
             textBoxIngresoNombre.Clear();
         }
+
+        private void buttonPasarUnItem_Click(object sender, EventArgs e)
+        {
+            if (listBoxNombres1.Text != "")
+            {
+                listBoxSalida1.Items.Add(listBoxNombres1.Text);
+                listBoxNombres1.Items.Remove(listBoxNombres1.Text);
+            }
+
+            else
+            {
+                MessageBox.Show("Seleccione un nombre de la lista");
+            }
+        }
+
+        private void textBoxIngresoNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {   
+                e.Handled = true;
+                buttonAgregarNombre.PerformClick();
+            }
+        }
     }
 }
