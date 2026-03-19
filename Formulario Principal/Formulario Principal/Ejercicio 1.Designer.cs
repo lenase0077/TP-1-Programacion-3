@@ -46,6 +46,7 @@
             // 
             // buttonAgregarNombre
             // 
+            buttonAgregarNombre.FlatStyle = FlatStyle.System;
             buttonAgregarNombre.Location = new Point(457, 31);
             buttonAgregarNombre.Name = "buttonAgregarNombre";
             buttonAgregarNombre.Size = new Size(75, 23);
@@ -103,6 +104,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 450);
             Controls.Add(textBoxSalida);
             Controls.Add(buttonPasarMultipleItem);

@@ -41,10 +41,9 @@ namespace Formulario_Principal
             if (textBoxIngresoNombre.Text.Trim() != "")
             {
                 // Funcion para validar que no halla nombres repetidos
-                for (int i = 0; i < listBoxNombres1.Items.Count; i++)
+                foreach (var item in listBoxNombres1.Items)
                 {
-
-                    if (listBoxNombres1.Items[i].ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
+                    if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
                     {
                         MessageBox.Show("No se puede ingresar nombres repetidos");
                         textBoxIngresoNombre.Clear();
