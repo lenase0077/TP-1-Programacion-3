@@ -17,7 +17,7 @@ namespace Formulario_Principal
             this.formularioPrincipal = formularioPrincipal;
         }
 
-        private void Ejercicio_1_FormClosed(object sender ,FormClosedEventArgs e)
+        private void Ejercicio_1_FormClosed(object sender, FormClosedEventArgs e)
         {
             formularioPrincipal.Show();
         }
