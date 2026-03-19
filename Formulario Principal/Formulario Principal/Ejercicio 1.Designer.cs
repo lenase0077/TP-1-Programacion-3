@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             textBoxIngresoNombre = new TextBox();
-            buttonAgregar = new Button();
+            buttonAgregarNombre = new Button();
             listBoxNombres1 = new ListBox();
             SuspendLayout();
             // 
@@ -40,14 +40,14 @@
             textBoxIngresoNombre.Size = new Size(284, 23);
             textBoxIngresoNombre.TabIndex = 0;
             // 
-            // buttonAgregar
+            // buttonAgregarNombre
             // 
-            buttonAgregar.Location = new Point(556, 34);
-            buttonAgregar.Name = "buttonAgregar";
-            buttonAgregar.Size = new Size(75, 23);
-            buttonAgregar.TabIndex = 1;
-            buttonAgregar.Text = "button1";
-            buttonAgregar.UseVisualStyleBackColor = true;
+            buttonAgregarNombre.Location = new Point(556, 34);
+            buttonAgregarNombre.Name = "buttonAgregarNombre";
+            buttonAgregarNombre.Size = new Size(75, 23);
+            buttonAgregarNombre.TabIndex = 1;
+            buttonAgregarNombre.Text = "button1";
+            buttonAgregarNombre.UseVisualStyleBackColor = true;
             // 
             // listBoxNombres1
             // 
@@ -63,7 +63,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(listBoxNombres1);
-            Controls.Add(buttonAgregar);
+            Controls.Add(buttonAgregarNombre);
             Controls.Add(textBoxIngresoNombre);
             Name = "Ejercicio_1";
             Text = "Ejercicio_1";
@@ -75,7 +75,7 @@
         #endregion
 
         private TextBox textBoxIngresoNombre;
-        private Button buttonAgregar;
+        private Button buttonAgregarNombre;
         private ListBox listBoxNombres1;
     }
 }
