@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\leand\\OneDrive\\Documentos\\Repositorio\\TP #1 Programacion 3\\Formulario Principal\\",
+  "WorkspaceRootPath": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB83F5B2-FA38-4ED4-A3CB-5C4EB6AD4C3E}|Formulario Principal\\Formulario Principal.csproj|c:\\users\\leand\\onedrive\\documentos\\repositorio\\tp #1 programacion 3\\formulario principal\\formulario principal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FB83F5B2-FA38-4ED4-A3CB-5C4EB6AD4C3E}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|d:\\utn\\3er cuatrimestre\\programaci\u00F3n iii\\tp-1-programacion-3\\formulario principal\\formulario principal\\form principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\form principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|d:\\utn\\3er cuatrimestre\\programaci\u00F3n iii\\tp-1-programacion-3\\formulario principal\\formulario principal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|d:\\utn\\3er cuatrimestre\\programaci\u00F3n iii\\tp-1-programacion-3\\formulario principal\\formulario principal\\ejercicio 1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\ejercicio 1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\formulario principal\\ejercicio 2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\ejercicio 2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\formulario principal\\ejercicio 1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\ejercicio 1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|d:\\utn\\3er cuatrimestre\\programaci\u00F3n iii\\tp-1-programacion-3\\formulario principal\\formulario principal\\form principal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\form principal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\formulario principal\\form principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\form principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\formulario principal\\ejercicio 3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4A262771-C943-0030-371C-626877DCD5A6}|Formulario Principal\\Formulario Principal.csproj|solutionrelative:formulario principal\\ejercicio 3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\leand\\OneDrive\\Documentos\\Repositorio\\TP #1 Programacion 3\\Formulario Principal\\Formulario Principal\\Form1.cs",
-              "RelativeDocumentMoniker": "Formulario Principal\\Form1.cs",
-              "ToolTip": "C:\\Users\\leand\\OneDrive\\Documentos\\Repositorio\\TP #1 Programacion 3\\Formulario Principal\\Formulario Principal\\Form1.cs [Design]",
-              "RelativeToolTip": "Formulario Principal\\Form1.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "Form Principal.cs [Design]",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Form Principal.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Form Principal.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Form Principal.cs [Design]",
+              "RelativeToolTip": "Formulario Principal\\Form Principal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T22:22:18.249Z",
+              "WhenOpened": "2026-03-19T10:42:13.714Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ejercicio 1.cs [Design]",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 1.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Ejercicio 1.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 1.cs [Design]",
+              "RelativeToolTip": "Formulario Principal\\Ejercicio 1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:06:00.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ejercicio 1.cs",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 1.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Ejercicio 1.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 1.cs",
+              "RelativeToolTip": "Formulario Principal\\Ejercicio 1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:00:08.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form Principal.Designer.cs",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Form Principal.Designer.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Form Principal.Designer.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Form Principal.Designer.cs",
+              "RelativeToolTip": "Formulario Principal\\Form Principal.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T10:50:45.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Program.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Program.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Program.cs",
+              "RelativeToolTip": "Formulario Principal\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T10:48:13.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form Principal.cs",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Form Principal.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Form Principal.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Form Principal.cs",
+              "RelativeToolTip": "Formulario Principal\\Form Principal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T10:45:13.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ejercicio 2.cs [Design]",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 2.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Ejercicio 2.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 2.cs [Design]",
+              "RelativeToolTip": "Formulario Principal\\Ejercicio 2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T10:42:17.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ejercicio 3.cs [Design]",
+              "DocumentMoniker": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 3.cs",
+              "RelativeDocumentMoniker": "Formulario Principal\\Ejercicio 3.cs",
+              "ToolTip": "D:\\UTN\\3er Cuatrimestre\\Programaci\u00F3n III\\TP-1-Programacion-3\\Formulario Principal\\Formulario Principal\\Ejercicio 3.cs [Design]",
+              "RelativeToolTip": "Formulario Principal\\Ejercicio 3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T10:42:16.502Z"
             }
           ]
         }

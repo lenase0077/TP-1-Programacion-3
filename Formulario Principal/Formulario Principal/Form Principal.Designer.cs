@@ -1,6 +1,6 @@
 ﻿namespace Formulario_Principal
 {
-    partial class Form1
+    partial class FormularioPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            btnEjercicio_1 = new Button();
+            SuspendLayout();
+            // 
+            // btnEjercicio_1
+            // 
+            btnEjercicio_1.FlatStyle = FlatStyle.Flat;
+            btnEjercicio_1.Font = new Font("Segoe UI" ,15F);
+            btnEjercicio_1.Location = new Point(89 ,60);
+            btnEjercicio_1.Name = "btnEjercicio_1";
+            btnEjercicio_1.Size = new Size(186 ,62);
+            btnEjercicio_1.TabIndex = 0;
+            btnEjercicio_1.Text = "EJERCICIO 1";
+            btnEjercicio_1.UseVisualStyleBackColor = true;
+            btnEjercicio_1.Click +=  btnEjercicio_1_Click ;
+            // 
+            // FormularioPrincipal
+            // 
+            AutoScaleDimensions = new SizeF(7F ,15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(800 ,450);
+            Controls.Add(btnEjercicio_1);
+            Name = "FormularioPrincipal";
+            Text = "Formulario Principal";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnEjercicio_1;
     }
 }
