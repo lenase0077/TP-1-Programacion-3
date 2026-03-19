@@ -38,7 +38,31 @@ namespace Formulario_Principal
             //Con el método Trim() se eliminan los espacios en blanco al inicio y al final del texto, por lo que si el usuario ingresa solo espacios, el resultado será una cadena vacía (""). Por lo tanto, al verificar si el resultado de Trim() es diferente de una cadena vacía, se asegura que el usuario haya ingresado un nombre válido.
             if (textBoxIngresoNombre.Text.Trim() != "")
             {
+
                 listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
+
+                // funcion if para validar que no haya caracteres vacios
+                if (string.IsNullOrWhiteSpace(textBoxIngresoNombre.Text))
+                {
+                    MessageBox.Show("No se puede ingresar caracteres vacios");
+                    textBoxIngresoNombre.Clear();
+                    return;
+                }
+                // Funcion para validar que no halla nombres repetidos
+                for (int i = 0; i < listBoxNombres1.Items.Count; i++)
+                {
+                    if (listBoxNombres1.Items[i].ToString().ToLower() == textBoxIngresoNombre.Text.ToLower())
+                    {
+                        MessageBox.Show("No se puede ingresar nombres repetidos");
+                        textBoxIngresoNombre.Clear();
+                        return;
+                    }
+                }
+            
+
+
+                listBoxNombres1.Items.Add(textBoxIngresoNombre.Text);
+                textBoxIngresoNombre.Clear();
             }
 
             else
