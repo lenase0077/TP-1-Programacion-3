@@ -31,23 +31,29 @@
             textBoxIngresoNombre = new TextBox();
             buttonAgregarNombre = new Button();
             listBoxNombres1 = new ListBox();
+            labelIngresarNombre = new Label();
+            buttonPasarUnItem = new Button();
+            buttonPasarMultipleItem = new Button();
+            textBoxSalida = new TextBox();
             SuspendLayout();
             // 
             // textBoxIngresoNombre
             // 
-            textBoxIngresoNombre.Location = new Point(253, 34);
+            textBoxIngresoNombre.Location = new Point(145, 31);
             textBoxIngresoNombre.Name = "textBoxIngresoNombre";
             textBoxIngresoNombre.Size = new Size(284, 23);
             textBoxIngresoNombre.TabIndex = 0;
             // 
             // buttonAgregarNombre
             // 
-            buttonAgregarNombre.Location = new Point(556, 34);
+            buttonAgregarNombre.Location = new Point(457, 31);
             buttonAgregarNombre.Name = "buttonAgregarNombre";
             buttonAgregarNombre.Size = new Size(75, 23);
             buttonAgregarNombre.TabIndex = 1;
-            buttonAgregarNombre.Text = "button1";
+            buttonAgregarNombre.Text = "Agregar";
             buttonAgregarNombre.UseVisualStyleBackColor = true;
+            buttonAgregarNombre.UseWaitCursor = true;
+            buttonAgregarNombre.Click += buttonAgregarNombre_Click;
             // 
             // listBoxNombres1
             // 
@@ -56,12 +62,53 @@
             listBoxNombres1.Name = "listBoxNombres1";
             listBoxNombres1.Size = new Size(207, 304);
             listBoxNombres1.TabIndex = 2;
+            listBoxNombres1.SelectedIndexChanged += listBoxNombres1_SelectedIndexChanged;
+            // 
+            // labelIngresarNombre
+            // 
+            labelIngresarNombre.AutoSize = true;
+            labelIngresarNombre.Location = new Point(27, 34);
+            labelIngresarNombre.Name = "labelIngresarNombre";
+            labelIngresarNombre.Size = new Size(112, 15);
+            labelIngresarNombre.TabIndex = 3;
+            labelIngresarNombre.Text = "Ingrese un Nombre:";
+            labelIngresarNombre.Click += label1_Click;
+            // 
+            // buttonPasarUnItem
+            // 
+            buttonPasarUnItem.Location = new Point(291, 201);
+            buttonPasarUnItem.Name = "buttonPasarUnItem";
+            buttonPasarUnItem.Size = new Size(75, 23);
+            buttonPasarUnItem.TabIndex = 4;
+            buttonPasarUnItem.Text = ">";
+            buttonPasarUnItem.UseVisualStyleBackColor = true;
+            // 
+            // buttonPasarMultipleItem
+            // 
+            buttonPasarMultipleItem.Location = new Point(291, 291);
+            buttonPasarMultipleItem.Name = "buttonPasarMultipleItem";
+            buttonPasarMultipleItem.Size = new Size(75, 23);
+            buttonPasarMultipleItem.TabIndex = 5;
+            buttonPasarMultipleItem.Text = ">>";
+            buttonPasarMultipleItem.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSalida
+            // 
+            textBoxSalida.Location = new Point(407, 102);
+            textBoxSalida.Multiline = true;
+            textBoxSalida.Name = "textBoxSalida";
+            textBoxSalida.Size = new Size(211, 304);
+            textBoxSalida.TabIndex = 6;
             // 
             // Ejercicio_1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBoxSalida);
+            Controls.Add(buttonPasarMultipleItem);
+            Controls.Add(buttonPasarUnItem);
+            Controls.Add(labelIngresarNombre);
             Controls.Add(listBoxNombres1);
             Controls.Add(buttonAgregarNombre);
             Controls.Add(textBoxIngresoNombre);
@@ -77,5 +124,9 @@
         private TextBox textBoxIngresoNombre;
         private Button buttonAgregarNombre;
         private ListBox listBoxNombres1;
+        private Label labelIngresarNombre;
+        private Button buttonPasarUnItem;
+        private Button buttonPasarMultipleItem;
+        private TextBox textBoxSalida;
     }
 }
