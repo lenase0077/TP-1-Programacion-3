@@ -53,6 +53,7 @@
             buttonAgregarNombre.Text = "Agregar";
             buttonAgregarNombre.UseVisualStyleBackColor = true;
             buttonAgregarNombre.UseWaitCursor = true;
+            buttonAgregarNombre.Click += buttonAgregarNombre_Click;
             // 
             // listBoxNombres1
             // 
@@ -61,6 +62,7 @@
             listBoxNombres1.Name = "listBoxNombres1";
             listBoxNombres1.Size = new Size(207, 304);
             listBoxNombres1.TabIndex = 2;
+            listBoxNombres1.SelectedIndexChanged += listBoxNombres1_SelectedIndexChanged;
             // 
             // labelIngresarNombre
             // 

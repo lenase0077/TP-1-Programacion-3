@@ -26,5 +26,31 @@ namespace Formulario_Principal
         {
 
         }
+
+        private void listBoxNombres1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAgregarNombre_Click(object sender, EventArgs e)
+        {
+            //listBoxNombres1
+            //textBoxIngresoNombre
+
+            if (!string.IsNullOrEmpty(textBoxIngresoNombre.Text))
+            {
+                // funcion if para validar que no haya caracteres vacios
+                if (string.IsNullOrWhiteSpace(textBoxIngresoNombre.Text))
+                {
+                    MessageBox.Show("No se puede ingresar caracteres vacios");
+                    textBoxIngresoNombre.Clear();
+                    return;
+                }
+
+
+                listBoxNombres1.Items.Add(textBoxIngresoNombre.Text);
+                textBoxIngresoNombre.Clear();
+            }
+        }
     }
 }
