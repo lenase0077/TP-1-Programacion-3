@@ -53,7 +53,6 @@ namespace Formulario_Principal
 
                 listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
             }
-
             else
             {
                 MessageBox.Show("Ingrese un nombre para agregar a la lista");
