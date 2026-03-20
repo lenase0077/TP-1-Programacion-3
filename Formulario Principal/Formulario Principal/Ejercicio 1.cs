@@ -38,32 +38,32 @@ namespace Formulario_Principal
             //if (textBoxIngresoNombre.Text.Trim().Length > 0) <- - Otra forma de validar que el texto no esté vacío
             //Con el método Trim() se eliminan los espacios en blanco al inicio y al final del texto, por lo que si el usuario ingresa solo espacios, el resultado será una cadena vacía (""). Por lo tanto, al verificar si el resultado de Trim() es diferente de una cadena vacía, se asegura que el usuario haya ingresado un nombre válido.
 
-            if (textBoxIngresoNombre.Text.Trim() != "")
-            {
-                // Funcion para validar que no halla nombres repetidos
-                foreach (var item in listBoxNombres1.Items)
-                {
-                    if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
-                    {
-                        MessageBox.Show("No se puede ingresar nombres repetidos");
-                        textBoxIngresoNombre.Clear();
-                        return;
-                    }
-                }
-
-                listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
-            }
-            else
+            // 1. Chequear si es white space
+            if (textBoxIngresoNombre.Text.IsWhiteSpace())
             {
                 MessageBox.Show("Ingrese un nombre para agregar a la lista");
+                return;
             }
+
+            // 2. Chequear si ya está en la lista
+            foreach (var item in listBoxNombres1.Items)
+            {
+                if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
+                {
+                    MessageBox.Show("No se puede ingresar nombres repetidos");
+                    textBoxIngresoNombre.Clear();
+                    return;
+                }
+            }
+
+            listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
 
             textBoxIngresoNombre.Clear();
         }
 
         private void buttonPasarUnItem_Click(object sender, EventArgs e)
         {
-            if (listBoxNombres1.Text != "")
+            if (!listBoxNombres1.Text.IsWhiteSpace())
             {
                 listBoxSalida1.Items.Add(listBoxNombres1.Text);
                 listBoxNombres1.Items.Remove(listBoxNombres1.Text);
