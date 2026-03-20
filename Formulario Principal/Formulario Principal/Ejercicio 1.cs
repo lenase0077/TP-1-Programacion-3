@@ -38,27 +38,19 @@ namespace Formulario_Principal
 
         private void buttonAgregarNombre_Click(object sender, EventArgs e)
         {
-
-            //if (textBoxIngresoNombre.Text.Trim().Length > 0) <- - Otra forma de validar que el texto no esté vacío
-            //Con el método Trim() se eliminan los espacios en blanco al inicio y al final del texto, por lo que si el usuario ingresa solo espacios, el resultado será una cadena vacía (""). Por lo tanto, al verificar si el resultado de Trim() es diferente de una cadena vacía, se asegura que el usuario haya ingresado un nombre válido.
-
-            // 1. Chequear si es white space
             if (textBoxIngresoNombre.Text.IsWhiteSpace())
             {
                 textBoxIngresoNombre.Clear();
                 MessageBox.Show("Ingrese un nombre para agregar a la lista");
+                return;
             }
-            else
-            {
-                //Funcion para validar que no halla nombres repetidos
-                ValidarQueNoHayNombreRepetido(listBoxNombres1, "No se puede ingresar nombres repetidos de la lista 1");
 
-                //Repito el prosceso con la lista 2
-                ValidarQueNoHayNombreRepetido(listBoxSalida1, "No se puede ingresar nombres repetidos de la lista 2");
+            ValidarQueNoHayNombreRepetido(listBoxNombres1, "No se puede ingresar nombres repetidos de la lista 1");
 
-                listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
-                textBoxIngresoNombre.Clear();
-            }
+            ValidarQueNoHayNombreRepetido(listBoxSalida1, "No se puede ingresar nombres repetidos de la lista 2");
+
+            listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
+            textBoxIngresoNombre.Clear();
         }
 
         private void buttonPasarUnItem_Click(object sender, EventArgs e)
