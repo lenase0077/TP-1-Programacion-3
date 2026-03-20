@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Media;
 using System.Text;
 using System.Windows.Forms;
 
@@ -87,17 +88,12 @@ namespace Formulario_Principal
         private void buttonPasarMultipleItem_Click(object sender, EventArgs e)
         {
             if (listBoxNombres1.Items.Count == 0) //me parecio buena idea ya que le da un estimulo al usuario de que el boton si funciona.
-            {
+            { 
                 MessageBox.Show("No hay nombres para pasar");
                 return;
             }
-
-            //Recorro la lista de nombres, desde el ultimo item hasta el primero, y los paso a la lista de salida, hago un recorrido inverso para facilitarme borrarlo.
-            for (int i = listBoxNombres1.Items.Count - 1; i >= 0; i--)
-            {
-                listBoxSalida1.Items.Add(listBoxNombres1.Items[i]);
-                listBoxNombres1.Items.Remove(listBoxNombres1.Items[i]); //tambien se podria usar listBoxNombres1.Items.clear() para borrar toda la lista, pero me parecio mas ordenado ir borrando item por item.
-            }
+            listBoxSalida1.Items.AddRange(listBoxNombres1.Items); // Paso todos los items de listBoxNombres1 a listBoxSalida1 pasando directamente el contenido
+            listBoxNombres1.Items.Clear(); 
         }
     }
 }
