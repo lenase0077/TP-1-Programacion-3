@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Media;
 using System.Text;
 using System.Windows.Forms;
 
@@ -41,8 +42,29 @@ namespace Formulario_Principal
             // 1. Chequear si es white space
             if (textBoxIngresoNombre.Text.IsWhiteSpace())
             {
-                MessageBox.Show("Ingrese un nombre para agregar a la lista");
-                return;
+                // Funcion para validar que no halla nombres repetidos
+                foreach (var item in listBoxNombres1.Items)
+                {
+                    if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
+                    {
+                        MessageBox.Show("No se puede ingresar nombres repetidos de la lista 1");
+                        textBoxIngresoNombre.Clear();
+                        return;
+                    }
+                }
+                
+                //Repito el prosceso con la lista 2
+                foreach (var item in listBoxSalida1.Items)
+                {
+                    if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
+                    {
+                        MessageBox.Show("No se puede ingresar nombres repetidos de la lista 2");
+                        textBoxIngresoNombre.Clear();
+                        return;
+                    }
+                }
+
+                listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
             }
 
             // 2. Chequear si ya está en la lista
@@ -78,10 +100,21 @@ namespace Formulario_Principal
         private void textBoxIngresoNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
-            {   
+            {
                 e.Handled = true;
                 buttonAgregarNombre.PerformClick();
             }
+        }
+
+        private void buttonPasarMultipleItem_Click(object sender, EventArgs e)
+        {
+            if (listBoxNombres1.Items.Count == 0) //me parecio buena idea ya que le da un estimulo al usuario de que el boton si funciona.
+            { 
+                MessageBox.Show("No hay nombres para pasar");
+                return;
+            }
+            listBoxSalida1.Items.AddRange(listBoxNombres1.Items); // Paso todos los items de listBoxNombres1 a listBoxSalida1 pasando directamente el contenido
+            listBoxNombres1.Items.Clear(); 
         }
     }
 }

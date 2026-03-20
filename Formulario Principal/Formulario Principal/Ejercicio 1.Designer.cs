@@ -61,7 +61,7 @@
             listBoxNombres1.FormattingEnabled = true;
             listBoxNombres1.Location = new Point(27, 102);
             listBoxNombres1.Name = "listBoxNombres1";
-            listBoxNombres1.Size = new Size(207, 304);
+            listBoxNombres1.Size = new Size(216, 304);
             listBoxNombres1.TabIndex = 2;
             listBoxNombres1.SelectedIndexChanged += listBoxNombres1_SelectedIndexChanged;
             // 
@@ -93,11 +93,13 @@
             buttonPasarMultipleItem.TabIndex = 5;
             buttonPasarMultipleItem.Text = ">>";
             buttonPasarMultipleItem.UseVisualStyleBackColor = true;
+            buttonPasarMultipleItem.Click += buttonPasarMultipleItem_Click;
             // 
             // listBoxSalida1
             // 
             listBoxSalida1.FormattingEnabled = true;
-            listBoxSalida1.Location = new Point(407, 100);
+            listBoxSalida1.Location = new Point(407, 103);
+            listBoxSalida1.Margin = new Padding(3, 3, 25, 20);
             listBoxSalida1.Name = "listBoxSalida1";
             listBoxSalida1.Size = new Size(207, 304);
             listBoxSalida1.TabIndex = 7;
