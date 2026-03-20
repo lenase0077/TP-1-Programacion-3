@@ -46,7 +46,18 @@ namespace Formulario_Principal
                 {
                     if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
                     {
-                        MessageBox.Show("No se puede ingresar nombres repetidos");
+                        MessageBox.Show("No se puede ingresar nombres repetidos de la lista 1");
+                        textBoxIngresoNombre.Clear();
+                        return;
+                    }
+                }
+                
+                //Repito el prosceso con la lista 2
+                foreach (var item in listBoxSalida1.Items)
+                {
+                    if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
+                    {
+                        MessageBox.Show("No se puede ingresar nombres repetidos de la lista 2");
                         textBoxIngresoNombre.Clear();
                         return;
                     }
