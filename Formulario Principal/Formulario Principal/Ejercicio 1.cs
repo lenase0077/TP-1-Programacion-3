@@ -42,6 +42,11 @@ namespace Formulario_Principal
             // 1. Chequear si es white space
             if (textBoxIngresoNombre.Text.IsWhiteSpace())
             {
+                textBoxIngresoNombre.Clear();
+                MessageBox.Show("Ingrese un nombre para agregar a la lista");
+            }
+            else
+            {
                 // Funcion para validar que no halla nombres repetidos
                 foreach (var item in listBoxNombres1.Items)
                 {
@@ -51,8 +56,9 @@ namespace Formulario_Principal
                         textBoxIngresoNombre.Clear();
                         return;
                     }
+
                 }
-                
+
                 //Repito el prosceso con la lista 2
                 foreach (var item in listBoxSalida1.Items)
                 {
@@ -65,23 +71,12 @@ namespace Formulario_Principal
                 }
 
                 listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
+
+                textBoxIngresoNombre.Clear();
             }
-
-            // 2. Chequear si ya está en la lista
-            foreach (var item in listBoxNombres1.Items)
-            {
-                if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
-                {
-                    MessageBox.Show("No se puede ingresar nombres repetidos");
-                    textBoxIngresoNombre.Clear();
-                    return;
-                }
-            }
-
-            listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
-
-            textBoxIngresoNombre.Clear();
+            
         }
+
 
         private void buttonPasarUnItem_Click(object sender, EventArgs e)
         {
