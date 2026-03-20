@@ -93,6 +93,7 @@
             buttonPasarMultipleItem.TabIndex = 5;
             buttonPasarMultipleItem.Text = ">>";
             buttonPasarMultipleItem.UseVisualStyleBackColor = true;
+            buttonPasarMultipleItem.Click += buttonPasarMultipleItem_Click;
             // 
             // listBoxSalida1
             // 
