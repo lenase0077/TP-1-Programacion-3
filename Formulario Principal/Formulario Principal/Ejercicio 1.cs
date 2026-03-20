@@ -71,10 +71,8 @@ namespace Formulario_Principal
                 }
 
                 listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
-
                 textBoxIngresoNombre.Clear();
             }
-            
         }
 
 
