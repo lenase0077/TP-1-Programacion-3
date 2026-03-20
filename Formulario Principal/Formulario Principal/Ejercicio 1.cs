@@ -23,7 +23,7 @@ namespace Formulario_Principal
             formularioPrincipal.Show();
         }
 
-        private void ValidarQueNoHayNombreRepetido(ListBox listBox, string mensaje)
+        private bool ValidarQueNoHayNombreRepetido(ListBox listBox, string mensaje)
         {
             foreach (var item in listBox.Items)
             {
@@ -31,9 +31,11 @@ namespace Formulario_Principal
                 {
                     MessageBox.Show(mensaje);
                     textBoxIngresoNombre.Clear();
-                    return;
+                    return true;
                 }
             }
+
+            return false;
         }
 
         private void buttonAgregarNombre_Click(object sender, EventArgs e)
@@ -45,9 +47,15 @@ namespace Formulario_Principal
                 return;
             }
 
-            ValidarQueNoHayNombreRepetido(listBoxNombres1, "No se puede ingresar nombres repetidos de la lista 1");
+            if (ValidarQueNoHayNombreRepetido(listBoxNombres1, "No se puede ingresar nombres repetidos de la lista 1"))
+            {
+                return;
+            }
 
-            ValidarQueNoHayNombreRepetido(listBoxSalida1, "No se puede ingresar nombres repetidos de la lista 2");
+            if (ValidarQueNoHayNombreRepetido(listBoxSalida1, "No se puede ingresar nombres repetidos de la lista 2"))
+            {
+                return;
+            }
 
             listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
             textBoxIngresoNombre.Clear();
