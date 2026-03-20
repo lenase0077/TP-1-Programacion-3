@@ -23,14 +23,17 @@ namespace Formulario_Principal
             formularioPrincipal.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ValidarQueNoHayNombreRepetido(ListBox listBox, string mensaje)
         {
-
-        }
-
-        private void listBoxNombres1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            foreach (var item in listBox.Items)
+            {
+                if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
+                {
+                    MessageBox.Show(mensaje);
+                    textBoxIngresoNombre.Clear();
+                    return;
+                }
+            }
         }
 
         private void buttonAgregarNombre_Click(object sender, EventArgs e)
@@ -47,34 +50,16 @@ namespace Formulario_Principal
             }
             else
             {
-                // Funcion para validar que no halla nombres repetidos
-                foreach (var item in listBoxNombres1.Items)
-                {
-                    if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
-                    {
-                        MessageBox.Show("No se puede ingresar nombres repetidos de la lista 1");
-                        textBoxIngresoNombre.Clear();
-                        return;
-                    }
-
-                }
+                //Funcion para validar que no halla nombres repetidos
+                ValidarQueNoHayNombreRepetido(listBoxNombres1, "No se puede ingresar nombres repetidos de la lista 1");
 
                 //Repito el prosceso con la lista 2
-                foreach (var item in listBoxSalida1.Items)
-                {
-                    if (item.ToString().ToLower().Trim() == textBoxIngresoNombre.Text.ToLower().Trim())
-                    {
-                        MessageBox.Show("No se puede ingresar nombres repetidos de la lista 2");
-                        textBoxIngresoNombre.Clear();
-                        return;
-                    }
-                }
+                ValidarQueNoHayNombreRepetido(listBoxSalida1, "No se puede ingresar nombres repetidos de la lista 2");
 
                 listBoxNombres1.Items.Add(textBoxIngresoNombre.Text.Trim());
                 textBoxIngresoNombre.Clear();
             }
         }
-
 
         private void buttonPasarUnItem_Click(object sender, EventArgs e)
         {

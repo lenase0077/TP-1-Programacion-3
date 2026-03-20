@@ -63,7 +63,6 @@
             listBoxNombres1.Name = "listBoxNombres1";
             listBoxNombres1.Size = new Size(216, 304);
             listBoxNombres1.TabIndex = 2;
-            listBoxNombres1.SelectedIndexChanged += listBoxNombres1_SelectedIndexChanged;
             // 
             // labelIngresarNombre
             // 
@@ -73,7 +72,6 @@
             labelIngresarNombre.Size = new Size(112, 15);
             labelIngresarNombre.TabIndex = 3;
             labelIngresarNombre.Text = "Ingrese un Nombre:";
-            labelIngresarNombre.Click += label1_Click;
             // 
             // buttonPasarUnItem
             // 
