@@ -28,5 +28,36 @@ namespace Formulario_Principal
         {
             formularioPrincipal.Show();
         }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+
+            if (textBoxNombre.Text.IsWhiteSpace() || textBoxApellido.Text.IsWhiteSpace())
+            {
+                MessageBox.Show("Ingrese un nombre y apellido para agregar a la lista");
+                return;
+            }
+
+
+            listBoxElementos.Items.Add(textBoxNombre.Text.Trim() + " " + textBoxApellido.Text.Trim());
+            textBoxNombre.Clear();
+            textBoxApellido.Clear();
+        }
+
+        private void buttonBorrar_Click(object sender, EventArgs e)
+        {
+
+            if (listBoxElementos.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione un elemento para eliminar de la lista");
+                return;
+            }
+
+            listBoxElementos.Items.RemoveAt(listBoxElementos.SelectedIndex);
+            MessageBox.Show("Elemento eliminado de la lista");
+            return;
+
+
+        }
     }
 }

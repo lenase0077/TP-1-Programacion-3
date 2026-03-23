@@ -64,6 +64,7 @@
             buttonAgregar.TabIndex = 2;
             buttonAgregar.Text = "Agregar";
             buttonAgregar.UseVisualStyleBackColor = true;
+            buttonAgregar.Click += buttonAgregar_Click;
             // 
             // labelApellido
             // 
@@ -119,6 +120,7 @@
             buttonBorrar.TabIndex = 1;
             buttonBorrar.Text = "Borrar";
             buttonBorrar.UseVisualStyleBackColor = true;
+            buttonBorrar.Click += buttonBorrar_Click;
             // 
             // listBoxElementos
             // 
