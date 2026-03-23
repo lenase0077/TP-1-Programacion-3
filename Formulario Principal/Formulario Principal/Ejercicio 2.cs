@@ -23,10 +23,6 @@ namespace Formulario_Principal
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void Ejercicio_2_FormClosed(object sender, FormClosedEventArgs e)
         {
