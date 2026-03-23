@@ -48,6 +48,7 @@
             // buttonAgregarNombre
             // 
             buttonAgregarNombre.FlatStyle = FlatStyle.System;
+            buttonAgregarNombre.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             buttonAgregarNombre.Location = new Point(457, 31);
             buttonAgregarNombre.Name = "buttonAgregarNombre";
             buttonAgregarNombre.Size = new Size(75, 23);
@@ -67,14 +68,17 @@
             // labelIngresarNombre
             // 
             labelIngresarNombre.AutoSize = true;
+            labelIngresarNombre.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             labelIngresarNombre.Location = new Point(27, 34);
             labelIngresarNombre.Name = "labelIngresarNombre";
-            labelIngresarNombre.Size = new Size(112, 15);
+            labelIngresarNombre.Size = new Size(118, 15);
             labelIngresarNombre.TabIndex = 3;
             labelIngresarNombre.Text = "Ingrese un Nombre:";
             // 
             // buttonPasarUnItem
             // 
+            buttonPasarUnItem.FlatStyle = FlatStyle.System;
+            buttonPasarUnItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             buttonPasarUnItem.Location = new Point(291, 201);
             buttonPasarUnItem.Name = "buttonPasarUnItem";
             buttonPasarUnItem.Size = new Size(75, 23);
@@ -85,6 +89,8 @@
             // 
             // buttonPasarMultipleItem
             // 
+            buttonPasarMultipleItem.FlatStyle = FlatStyle.System;
+            buttonPasarMultipleItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             buttonPasarMultipleItem.Location = new Point(291, 291);
             buttonPasarMultipleItem.Name = "buttonPasarMultipleItem";
             buttonPasarMultipleItem.Size = new Size(75, 23);
