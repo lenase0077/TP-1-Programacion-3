@@ -38,7 +38,6 @@ namespace Formulario_Principal
                 return;
             }
 
-
             listBoxElementos.Items.Add(textBoxNombre.Text.Trim() + " " + textBoxApellido.Text.Trim());
             textBoxNombre.Clear();
             textBoxApellido.Clear();
@@ -46,6 +45,12 @@ namespace Formulario_Principal
 
         private void buttonBorrar_Click(object sender, EventArgs e)
         {
+
+            if (listBoxElementos.Items.Count == 0)
+            {
+                MessageBox.Show("La lista está vacía.");
+                return;
+            }
 
             if (listBoxElementos.SelectedIndex == -1)
             {
@@ -55,8 +60,6 @@ namespace Formulario_Principal
 
             listBoxElementos.Items.RemoveAt(listBoxElementos.SelectedIndex);
             MessageBox.Show("Elemento eliminado de la lista");
-            return;
-
 
         }
     }
