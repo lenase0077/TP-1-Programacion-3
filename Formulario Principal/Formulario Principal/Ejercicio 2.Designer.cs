@@ -92,6 +92,7 @@
             textBoxApellido.Name = "textBoxApellido";
             textBoxApellido.Size = new Size(168, 23);
             textBoxApellido.TabIndex = 1;
+            textBoxApellido.KeyPress += textBoxApellido_KeyPress;
             // 
             // textBoxNombre
             // 
@@ -99,6 +100,7 @@
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.Size = new Size(168, 23);
             textBoxNombre.TabIndex = 0;
+            textBoxNombre.KeyPress += textBoxNombre_KeyPress;
             // 
             // groupBoxElementos
             // 
@@ -128,6 +130,7 @@
             listBoxElementos.Location = new Point(18, 33);
             listBoxElementos.Name = "listBoxElementos";
             listBoxElementos.Size = new Size(259, 289);
+            listBoxElementos.Sorted = true;
             listBoxElementos.TabIndex = 0;
             // 
             // Ejercicio_2

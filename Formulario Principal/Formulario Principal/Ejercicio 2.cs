@@ -62,5 +62,24 @@ namespace Formulario_Principal
             MessageBox.Show("Elemento eliminado de la lista");
 
         }
+
+        private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                e.Handled = true;
+                textBoxApellido.Focus();
+            }
+        }
+
+        private void textBoxApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                e.Handled = true;
+                buttonAgregar.PerformClick();
+                textBoxNombre.Focus();
+            }
+        }
     }
 }
