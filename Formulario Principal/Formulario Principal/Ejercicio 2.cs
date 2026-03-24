@@ -38,6 +38,20 @@ namespace Formulario_Principal
                 return;
             }
 
+            foreach (String item in listBoxElementos.Items)
+            {
+                String nombre = textBoxNombre.Text + textBoxApellido.Text;
+
+                // String.Replace() reemplaza todas las instancias de un string por otro.
+                // En este caso, reemplzar por string.Empty elimina a los espacios vacíos.
+                if (nombre.Replace(" ", string.Empty).ToLower() == item.Replace(" ", string.Empty).ToLower())
+                {
+                    MessageBox.Show("El nombre ya se encuentra en la lista.");
+                    return;
+                }
+            }
+
+
             listBoxElementos.Items.Add(textBoxNombre.Text.Trim() + " " + textBoxApellido.Text.Trim());
             textBoxNombre.Clear();
             textBoxApellido.Clear();
@@ -45,7 +59,6 @@ namespace Formulario_Principal
 
         private void buttonBorrar_Click(object sender, EventArgs e)
         {
-
             if (listBoxElementos.Items.Count == 0)
             {
                 MessageBox.Show("La lista está vacía.");
