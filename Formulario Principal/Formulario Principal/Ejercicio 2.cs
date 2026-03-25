@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace Formulario_Principal
@@ -37,6 +38,19 @@ namespace Formulario_Principal
                 MessageBox.Show("Ingrese un nombre y apellido para agregar a la lista");
                 return;
             }
+
+            if (Regex.IsMatch(textBoxNombre.Text, @"[ÁÉÍÓÚáéíóú]") || Regex.IsMatch(textBoxApellido.Text, @"[ÁÉÍÓÚáéíóú]"))
+            {
+                MessageBox.Show("No se permiten acentos en nombre y apellido.");
+                return;
+            }
+
+            if (!Regex.IsMatch(textBoxNombre.Text, @"^[A-Za-zÑñ\s]+$") || !Regex.IsMatch(textBoxApellido.Text, @"^[A-Za-zÑñ\s]+$"))
+            {
+                MessageBox.Show("Ingrese solo letras para el nombre y apellido.");
+                return;
+            }
+
 
             foreach (String item in listBoxElementos.Items)
             {
