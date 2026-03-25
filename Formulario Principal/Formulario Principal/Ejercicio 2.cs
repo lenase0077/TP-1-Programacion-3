@@ -36,6 +36,8 @@ namespace Formulario_Principal
             if (textBoxNombre.Text.IsWhiteSpace() || textBoxApellido.Text.IsWhiteSpace())
             {
                 MessageBox.Show("Ingrese un nombre y apellido para agregar a la lista");
+                textBoxApellido.Clear();
+                textBoxNombre.Clear();
                 return;
             }
 
