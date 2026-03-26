@@ -17,9 +17,19 @@ namespace Formulario_Principal
             this.formularioPrincipal = formularioPrincipal;
         }
 
-        private void Ejercicio_3_FormClosed(object sender ,FormClosedEventArgs e)
+        private void Ejercicio_3_FormClosed(object sender, FormClosedEventArgs e)
         {
             formularioPrincipal.Show();
+        }
+
+        private void radioButtonCasado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonSoltero_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

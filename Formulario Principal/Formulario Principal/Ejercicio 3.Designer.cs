@@ -29,18 +29,21 @@
         private void InitializeComponent()
         {
             GroupBoxSexo = new GroupBox();
-            this.radioButtonM = new RadioButton();
+            radioButtonM = new RadioButton();
             radioButtonF = new RadioButton();
             groupBox1 = new GroupBox();
+            radioButtonSoltero = new RadioButton();
+            radioButtonCasado = new RadioButton();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             button1 = new Button();
             checkedListBox1 = new CheckedListBox();
             GroupBoxSexo.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // GroupBoxSexo
             // 
-            GroupBoxSexo.Controls.Add(this.radioButtonM);
+            GroupBoxSexo.Controls.Add(radioButtonM);
             GroupBoxSexo.Controls.Add(radioButtonF);
             GroupBoxSexo.Location = new Point(80, 51);
             GroupBoxSexo.Name = "GroupBoxSexo";
@@ -51,14 +54,13 @@
             // 
             // radioButtonM
             // 
-            this.radioButtonM.AutoSize = true;
-            this.radioButtonM.Location = new Point(18, 57);
-            this.radioButtonM.Name = "radioButtonM";
-            this.radioButtonM.Size = new Size(80, 19);
-            this.radioButtonM.TabIndex = 1;
-            this.radioButtonM.TabStop = true;
-            this.radioButtonM.Text = "Masculino";
-            this.radioButtonM.UseVisualStyleBackColor = true;
+            radioButtonM.AutoSize = true;
+            radioButtonM.Location = new Point(18, 57);
+            radioButtonM.Name = "radioButtonM";
+            radioButtonM.Size = new Size(80, 19);
+            radioButtonM.TabIndex = 1;
+            radioButtonM.Text = "Masculino";
+            radioButtonM.UseVisualStyleBackColor = true;
             // 
             // radioButtonF
             // 
@@ -67,18 +69,41 @@
             radioButtonF.Name = "radioButtonF";
             radioButtonF.Size = new Size(78, 19);
             radioButtonF.TabIndex = 0;
-            radioButtonF.TabStop = true;
             radioButtonF.Text = "Femenino";
             radioButtonF.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(radioButtonSoltero);
+            groupBox1.Controls.Add(radioButtonCasado);
             groupBox1.Location = new Point(361, 51);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(150, 100);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Estado Civil";
+            // 
+            // radioButtonSoltero
+            // 
+            radioButtonSoltero.AutoSize = true;
+            radioButtonSoltero.Location = new Point(16, 57);
+            radioButtonSoltero.Name = "radioButtonSoltero";
+            radioButtonSoltero.Size = new Size(62, 19);
+            radioButtonSoltero.TabIndex = 3;
+            radioButtonSoltero.Text = "Soltero";
+            radioButtonSoltero.UseVisualStyleBackColor = true;
+            radioButtonSoltero.CheckedChanged += radioButtonSoltero_CheckedChanged;
+            // 
+            // radioButtonCasado
+            // 
+            radioButtonCasado.AutoSize = true;
+            radioButtonCasado.Location = new Point(16, 32);
+            radioButtonCasado.Name = "radioButtonCasado";
+            radioButtonCasado.Size = new Size(64, 19);
+            radioButtonCasado.TabIndex = 2;
+            radioButtonCasado.Text = "Casado";
+            radioButtonCasado.UseVisualStyleBackColor = true;
+            radioButtonCasado.CheckedChanged += radioButtonCasado_CheckedChanged;
             // 
             // button1
             // 
@@ -111,6 +136,8 @@
             FormClosed += Ejercicio_3_FormClosed;
             GroupBoxSexo.ResumeLayout(false);
             GroupBoxSexo.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -123,5 +150,7 @@
         private CheckedListBox checkedListBox1;
         private RadioButton radioButtonM;
         private RadioButton radioButtonF;
+        private RadioButton radioButtonSoltero;
+        private RadioButton radioButtonCasado;
     }
 }
