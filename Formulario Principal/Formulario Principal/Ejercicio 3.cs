@@ -31,5 +31,18 @@ namespace Formulario_Principal
         {
 
         }
+
+        private void Ejercicio_3_Load(object sender, EventArgs e)
+        {
+            var profesiones2 = new[]
+            {
+                "Data Entry",
+                "Operador de PC",
+                "Programador",
+                "Reparador de PC",
+                "Tester"
+            };
+            checkedListBoxProfesion.Items.AddRange(profesiones2);
+        }
     }
 }

@@ -36,7 +36,7 @@
             radioButtonCasado = new RadioButton();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             button1 = new Button();
-            checkedListBox1 = new CheckedListBox();
+            checkedListBoxProfesion = new CheckedListBox();
             GroupBoxSexo.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -107,33 +107,34 @@
             // 
             // button1
             // 
-            button1.Location = new Point(186, 385);
+            button1.Location = new Point(186, 335);
             button1.Name = "button1";
             button1.Size = new Size(200, 30);
             button1.TabIndex = 2;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
+            // checkedListBoxProfesion
             // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(186, 200);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(200, 94);
-            checkedListBox1.TabIndex = 3;
+            checkedListBoxProfesion.FormattingEnabled = true;
+            checkedListBoxProfesion.Location = new Point(186, 200);
+            checkedListBoxProfesion.Name = "checkedListBoxProfesion";
+            checkedListBoxProfesion.Size = new Size(200, 94);
+            checkedListBoxProfesion.TabIndex = 3;
             // 
             // Ejercicio_3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 661);
-            Controls.Add(checkedListBox1);
+            Controls.Add(checkedListBoxProfesion);
             Controls.Add(button1);
             Controls.Add(groupBox1);
             Controls.Add(GroupBoxSexo);
             Name = "Ejercicio_3";
             Text = "Ejercicio_3";
             FormClosed += Ejercicio_3_FormClosed;
+            Load += Ejercicio_3_Load;
             GroupBoxSexo.ResumeLayout(false);
             GroupBoxSexo.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -147,7 +148,7 @@
         private GroupBox groupBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button button1;
-        private CheckedListBox checkedListBox1;
+        private CheckedListBox checkedListBoxProfesion;
         private RadioButton radioButtonM;
         private RadioButton radioButtonF;
         private RadioButton radioButtonSoltero;
