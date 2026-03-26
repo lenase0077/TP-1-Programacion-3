@@ -10,9 +10,16 @@ namespace Formulario_Principal
 {
     public partial class Ejercicio_3 : Form
     {
-        public Ejercicio_3()
+        FormularioPrincipal formularioPrincipal;
+        public Ejercicio_3(FormularioPrincipal formularioPrincipal)
         {
             InitializeComponent();
+            this.formularioPrincipal = formularioPrincipal;
+        }
+
+        private void Ejercicio_3_FormClosed(object sender ,FormClosedEventArgs e)
+        {
+            formularioPrincipal.Show();
         }
     }
 }
