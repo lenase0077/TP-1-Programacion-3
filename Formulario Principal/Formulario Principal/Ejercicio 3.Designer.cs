@@ -65,12 +65,10 @@
             // radioButtonF
             // 
             radioButtonF.AutoSize = true;
-            radioButtonF.Checked = true;
             radioButtonF.Location = new Point(18, 32);
             radioButtonF.Name = "radioButtonF";
             radioButtonF.Size = new Size(78, 19);
             radioButtonF.TabIndex = 0;
-            radioButtonF.TabStop = true;
             radioButtonF.Text = "Femenino";
             radioButtonF.UseVisualStyleBackColor = true;
             // 
@@ -99,12 +97,10 @@
             // radioButtonCasado
             // 
             radioButtonCasado.AutoSize = true;
-            radioButtonCasado.Checked = true;
             radioButtonCasado.Location = new Point(16, 32);
             radioButtonCasado.Name = "radioButtonCasado";
             radioButtonCasado.Size = new Size(64, 19);
             radioButtonCasado.TabIndex = 2;
-            radioButtonCasado.TabStop = true;
             radioButtonCasado.Text = "Casado";
             radioButtonCasado.UseVisualStyleBackColor = true;
             radioButtonCasado.CheckedChanged += radioButtonCasado_CheckedChanged;
