@@ -122,6 +122,7 @@
             checkedListBoxProfesion.Location = new Point(186, 200);
             checkedListBoxProfesion.Name = "checkedListBoxProfesion";
             checkedListBoxProfesion.Size = new Size(200, 94);
+            checkedListBoxProfesion.Sorted = true;
             checkedListBoxProfesion.TabIndex = 3;
             // 
             // labelSeleccionado
