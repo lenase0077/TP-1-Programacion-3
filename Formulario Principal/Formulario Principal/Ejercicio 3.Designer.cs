@@ -31,14 +31,15 @@
             GroupBoxSexo = new GroupBox();
             radioButtonM = new RadioButton();
             radioButtonF = new RadioButton();
-            groupBox1 = new GroupBox();
+            GroupBoxEstadoCivil = new GroupBox();
             radioButtonSoltero = new RadioButton();
             radioButtonCasado = new RadioButton();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            button1 = new Button();
+            botonSeleccionado = new Button();
             checkedListBoxProfesion = new CheckedListBox();
+            labelSeleccionado = new Label();
             GroupBoxSexo.SuspendLayout();
-            groupBox1.SuspendLayout();
+            GroupBoxEstadoCivil.SuspendLayout();
             SuspendLayout();
             // 
             // GroupBoxSexo
@@ -72,16 +73,16 @@
             radioButtonF.Text = "Femenino";
             radioButtonF.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // GroupBoxEstadoCivil
             // 
-            groupBox1.Controls.Add(radioButtonSoltero);
-            groupBox1.Controls.Add(radioButtonCasado);
-            groupBox1.Location = new Point(361, 51);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(150, 100);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Estado Civil";
+            GroupBoxEstadoCivil.Controls.Add(radioButtonSoltero);
+            GroupBoxEstadoCivil.Controls.Add(radioButtonCasado);
+            GroupBoxEstadoCivil.Location = new Point(361, 51);
+            GroupBoxEstadoCivil.Name = "GroupBoxEstadoCivil";
+            GroupBoxEstadoCivil.Size = new Size(150, 100);
+            GroupBoxEstadoCivil.TabIndex = 1;
+            GroupBoxEstadoCivil.TabStop = false;
+            GroupBoxEstadoCivil.Text = "Estado Civil";
             // 
             // radioButtonSoltero
             // 
@@ -105,14 +106,15 @@
             radioButtonCasado.UseVisualStyleBackColor = true;
             radioButtonCasado.CheckedChanged += radioButtonCasado_CheckedChanged;
             // 
-            // button1
+            // botonSeleccionado
             // 
-            button1.Location = new Point(186, 335);
-            button1.Name = "button1";
-            button1.Size = new Size(200, 30);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            botonSeleccionado.Location = new Point(186, 335);
+            botonSeleccionado.Name = "botonSeleccionado";
+            botonSeleccionado.Size = new Size(200, 30);
+            botonSeleccionado.TabIndex = 2;
+            botonSeleccionado.Text = "Mostrar lo que se selecciono";
+            botonSeleccionado.UseVisualStyleBackColor = true;
+            botonSeleccionado.Click += button1_Click;
             // 
             // checkedListBoxProfesion
             // 
@@ -122,14 +124,26 @@
             checkedListBoxProfesion.Size = new Size(200, 94);
             checkedListBoxProfesion.TabIndex = 3;
             // 
+            // labelSeleccionado
+            // 
+            labelSeleccionado.AutoSize = true;
+            labelSeleccionado.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            labelSeleccionado.Location = new Point(136, 392);
+            labelSeleccionado.Name = "labelSeleccionado";
+            labelSeleccionado.Size = new Size(40, 15);
+            labelSeleccionado.TabIndex = 4;
+            labelSeleccionado.Text = "label1";
+            labelSeleccionado.Visible = false;
+            // 
             // Ejercicio_3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(584, 661);
+            Controls.Add(labelSeleccionado);
             Controls.Add(checkedListBoxProfesion);
-            Controls.Add(button1);
-            Controls.Add(groupBox1);
+            Controls.Add(botonSeleccionado);
+            Controls.Add(GroupBoxEstadoCivil);
             Controls.Add(GroupBoxSexo);
             Name = "Ejercicio_3";
             Text = "Ejercicio_3";
@@ -137,21 +151,23 @@
             Load += Ejercicio_3_Load;
             GroupBoxSexo.ResumeLayout(false);
             GroupBoxSexo.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            GroupBoxEstadoCivil.ResumeLayout(false);
+            GroupBoxEstadoCivil.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private GroupBox GroupBoxSexo;
-        private GroupBox groupBox1;
+        private GroupBox GroupBoxEstadoCivil;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Button button1;
+        private Button botonSeleccionado;
         private CheckedListBox checkedListBoxProfesion;
         private RadioButton radioButtonM;
         private RadioButton radioButtonF;
         private RadioButton radioButtonSoltero;
         private RadioButton radioButtonCasado;
+        private Label labelSeleccionado;
     }
 }

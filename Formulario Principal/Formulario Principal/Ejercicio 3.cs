@@ -48,5 +48,49 @@ namespace Formulario_Principal
             radioButtonF.Checked = true;
             radioButtonCasado.Checked = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            actualizarLabel();
+
+        }
+
+        private void actualizarLabel()
+        {
+            string sexo = "";
+            string estadoCivil = "";
+            string Oficio = "";
+
+
+            foreach (RadioButton radioButton in GroupBoxSexo.Controls)
+            {
+                if (radioButton.Checked)
+                {
+                    sexo = radioButton.Text;
+                    break;
+                }
+            }
+
+            foreach (RadioButton radioButton in GroupBoxEstadoCivil.Controls)
+            {
+                if (radioButton.Checked)
+                {
+                    estadoCivil = radioButton.Text;
+                    break;
+                }
+            }
+
+            foreach (var item in checkedListBoxProfesion.CheckedItems)
+            {
+                Oficio += "\t - " + item.ToString() + "\n";
+            }
+
+            labelSeleccionado.Text = "Usted seleeciono los siguientes elementos: \n" +
+                "Sexo: " + sexo + "\n" +
+                "Estado Civil: " + estadoCivil + "\n" +
+                "Oficio: \n" + Oficio;
+
+            labelSeleccionado.Visible = true;
+        }
     }
 }
