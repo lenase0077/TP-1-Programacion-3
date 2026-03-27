@@ -44,6 +44,8 @@ namespace Formulario_Principal
             };
             checkedListBoxProfesion.Items.AddRange(profesiones2);
 
+            checkedListBoxProfesion.CheckOnClick = true; ///Permite seleccionar o deseleccionar un elemento con un solo clic
+
             //VALORES POR DEFECTO
             radioButtonF.Checked = true;
             radioButtonCasado.Checked = true;
