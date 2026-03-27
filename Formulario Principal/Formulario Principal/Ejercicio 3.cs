@@ -43,6 +43,10 @@ namespace Formulario_Principal
                 "Tester"
             };
             checkedListBoxProfesion.Items.AddRange(profesiones2);
+
+            //VALORES POR DEFECTO
+            radioButtonF.Checked = true;
+            radioButtonCasado.Checked = true;
         }
     }
 }
