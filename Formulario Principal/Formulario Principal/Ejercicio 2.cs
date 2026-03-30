@@ -19,12 +19,6 @@ namespace Formulario_Principal
             this.formularioPrincipal = formularioPrincipal;
         }
 
-        public Ejercicio_2()
-        {
-            InitializeComponent();
-        }
-
-
         private void Ejercicio_2_FormClosed(object sender, FormClosedEventArgs e)
         {
             formularioPrincipal.Show();
